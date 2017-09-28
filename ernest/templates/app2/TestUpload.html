@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content%}
+
+  <h2>testupload page</h2>
+  <p>
+    {{ path }}
+	{{ host }}
+  </p>
+  <!--<p>
+	{% for i in test_list %}
+    <p>
+    {{ i.name }}
+	</p>
+	<p>
+    {{ i.age }}
+	</p>
+	<p>
+    {{ i.brithday }}
+    </p>
+	{% endfor %}
+  </p>-->
+  
+{% endblock content%}

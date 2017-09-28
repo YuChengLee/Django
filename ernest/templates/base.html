@@ -1,0 +1,23 @@
+{% load staticfiles %}
+
+<p>
+  <a href="{% url 'app1:index' %}">首頁</a>
+</p>
+<p>
+  <h4>app1 -
+  <a href="{% url 'app1:detail' %}">detail.html</a> -
+  <a href="{% url 'app1:showphoto' %}">showphoto.html</a>
+  </h4>
+</p>
+<p>
+  <h4>app2 -
+  <a href="{% url 'app2:testupload' %}">testupload.html</a> - 
+  <a href="{% url 'app2:newindex' %}">newindex.html</a>
+  </h4>
+</p>
+
+<p>
+  <img src="{% static 'images/Mtest.JPG' %}" alt="img" style="width:148px;height:264px;">
+</p>
+
+{% block content%}{% endblock content%}

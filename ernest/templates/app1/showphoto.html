@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content%}
+
+  <h2>Photo page</h2>
+  
+  <p>
+	{% for i in photo_list %}
+    <p>
+    {{ i.img_name }}
+	</p>
+	<p>
+    {{ i.img }}
+	<img src="{{ i.img.url }}">
+    </p>
+	{% endfor %}
+  </p>
+{% endblock content%}

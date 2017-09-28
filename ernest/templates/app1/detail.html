@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content%}
+
+  <h2>QUESTION page</h2>
+  
+  <ul>
+    {% for i in question %}
+	  <li>{{i}}</li>
+	{% empty %}
+	  <li>empty</li>
+	{% endfor %}
+  </ul>
+  <p>
+	{% for i in photo_list %}
+    <p>
+    {{ i.img_name }}
+	</p>
+	<p>
+    {{ i.img }}
+	<img src="/{{ i.img }}" alt="img" style="width:148px;height:264px;">
+    </p>
+{% endfor %}
+  </p>
+{% endblock content%}
